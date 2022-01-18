@@ -369,12 +369,12 @@ impl NetworkStream for HttpStream {
 
     #[inline]
     fn set_read_timeout(&self, dur: Option<Duration>) -> io::Result<()> {
-        self.0.set_read_timeout(dur)
+        Ok(())
     }
 
     #[inline]
     fn set_write_timeout(&self, dur: Option<Duration>) -> io::Result<()> {
-        self.0.set_write_timeout(dur)
+        Ok(())
     }
 
     #[inline]
